@@ -1,0 +1,354 @@
+/* Filipino Theme Colors */
+:root {
+    --philippine-red: #CE1126;
+    --philippine-blue: #0038A8;
+    --philippine-yellow: #FCD116;
+    --warm-orange: #FFA500;
+    --warm-beige: #F5EEDC;
+    --light-cream: #FEFAF1;
+    --text-dark: #333333;
+    --text-medium: #666666;
+    --text-light: #999999;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, var(--light-cream) 0%, rgba(245, 238, 220, 0.8) 50%, #ffffff 100%);
+    min-height: 100vh;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 30px;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--philippine-red);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Product Grid */
+.products-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(206, 17, 38, 0.15);
+    overflow: hidden;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-content {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(206, 17, 38, 0.2) 0%, rgba(0, 56, 168, 0.2) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-placeholder {
+    font-size: 40px;
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--philippine-blue);
+    margin: 0;
+}
+
+.product-description {
+    font-size: 14px;
+    color: var(--text-medium);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--philippine-red);
+}
+
+.product-category {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, rgba(252, 209, 22, 0.3) 0%, rgba(255, 165, 0, 0.2) 100%);
+    color: var(--philippine-red);
+    border-radius: 8px;
+}
+
+/* Allergens Button */
+.allergens-button {
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, var(--philippine-blue) 0%, rgba(0, 56, 168, 0.8) 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.allergens-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
+}
+
+.allergens-button:active {
+    transform: translateY(0);
+}
+
+/* Detail Page Styles */
+.detail-page {
+    padding-top: 20px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    background: white;
+    color: var(--philippine-blue);
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.back-button:hover {
+    transform: translateX(-2px);
+}
+
+.back-icon {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-detail-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-top: 16px;
+}
+
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.detail-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--philippine-red);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.product-description-full {
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.allergens-section {
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-top: 16px;
+}
+
+.allergens-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--philippine-blue);
+    margin-bottom: 12px;
+}
+
+.allergens-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.allergens-list li {
+    font-size: 15px;
+    color: var(--text-medium);
+    padding-left: 20px;
+    position: relative;
+}
+
+.allergens-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--philippine-red);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.detail-image {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(206, 17, 38, 0.1) 0%, rgba(0, 56, 168, 0.1) 100%);
+}
+
+.detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 500px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 20px;
+    }
+
+    .product-card {
+        padding: 16px;
+    }
+
+    .product-content {
+        flex-direction: column;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-image {
+        order: -1;
+        max-height: 300px;
+    }
+
+    .product-title {
+        font-size: 24px;
+    }
+
+    .product-description-full {
+        font-size: 15px;
+    }
+
+    .allergens-title {
+        font-size: 16px;
+    }
+
+    .allergens-list li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 16px;
+    }
+
+    .main-title {
+        font-size: 18px;
+    }
+
+    .product-detail-card {
+        padding: 24px;
+    }
+
+    .detail-text {
+        gap: 20px;
+    }
+}
+
